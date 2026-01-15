@@ -4,8 +4,6 @@ import java.sql.*;
 import db.DBConnection;
 
 public class UserDAO {
-
-    // returns role if login success, else null
     public static String login(String user, String pass) {
 
         try {
@@ -26,8 +24,6 @@ public class UserDAO {
         }
         return null;
     }
-
-    // register ONLY USER
     public static boolean register(String user, String pass) {
 
         try {
@@ -54,3 +50,4 @@ public class UserDAO {
         }
     }
 }
+
